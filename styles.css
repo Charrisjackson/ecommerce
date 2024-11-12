@@ -1,0 +1,46 @@
+html {
+  width: 90%;
+  height: 90%;
+}
+
+body {
+  background-color: #fffdd0;
+  width: 90%;
+  height: 90%;
+}
+.headerpic {
+  width: 100vw;
+}
+img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  position: center;
+}
+.logo {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+}
+nav {
+  background-color: #3c1361;
+  top: 0;
+  display: flex;
+  margin-top: 0;
+  width: 100vw;
+  height: 86px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.homenav {
+}
