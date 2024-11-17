@@ -212,6 +212,12 @@ footer ul li {
 }
 /* responsiveness */
 @media only screen and (min-width: 370px) and (max-width: 699px) {
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .content {
     display: grid;
     grid-template-columns: 1fr;
@@ -219,12 +225,12 @@ footer ul li {
     margin: 0 auto;
     overflow: scroll;
   }
-  nav a {
+  .nav-links a {
     margin: 0.5rem;
     text-decoration: none;
   }
 
-  footer a {
+  .footer-links a {
     margin: 0.5rem;
     text-decoration: none;
     color: white;
@@ -245,9 +251,5 @@ footer ul li {
     height: 100vh;
     top: 0;
     padding-top: 0;
-  }
-  .content {
-    width: 100vw;
-    height: 100vh;
   }
 }

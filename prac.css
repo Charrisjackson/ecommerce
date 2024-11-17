@@ -23,6 +23,7 @@ button a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(images/hero.jpeg);
   background-size: cover;
+  object-fit: cover;
   background-image: center;
 }
 
@@ -149,17 +150,10 @@ footer ul li {
 }
 
 /* responsiveness */
-@media only screen and (min-width: 370px) and (max-width: 699px) {
-  #product-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 80%;
-    margin: 0 auto;
-  }
+@media only screen and (min-width: 370px) and (max-width: 750px) {
   .nav-links a {
     margin: 0.5rem;
     text-decoration: none;
-    color: Black;
   }
 
   .footer-links a {
@@ -168,21 +162,13 @@ footer ul li {
     color: white;
   }
   .content {
-    display: grid;
-    /* grid-template-columns: 1fr; */
     max-width: 80%;
     margin: 0 auto;
-  }
-  .navbar a {
-    margin: 0.5rem;
-    text-decoration: none;
-    color: Black;
   }
 
   footer a {
     margin: 0.5rem;
     text-decoration: none;
-    color: white;
   }
   h1 {
     font-size: 10px;
@@ -203,6 +189,13 @@ footer ul li {
     display: grid;
     width: 100vw;
   }
-  nav {
+}
+@media only screen and (max-width: 960px) {
+  .navbar {
+    position: relative;
+    top: 40rem;
   }
 }
+@media only screen and (max-width: 750px) {
+}
+/* add brrak point for 500 max width */
