@@ -1,89 +1,97 @@
-
-[{
-    "Image" :"images/macbook.png",
-  "Name": "MacBook Air 13” and 15, M2 or M3 chip",
-  "Price": 1099,
-  "description": "MacBook Air sails through work and play — and the M3 chip brings even greater capabilities to the world/'s most popular laptop. You can express yourself and get things done effortlessly with Apple Intelligence.1 And with up to 18 hours of battery life,2 you can take the superportable MacBook Air anywhere and blaze through whatever you/'re into."
-},
-
-
-{
-    "Image" :"images/bookbag.png",
-    "Name": "Standard laptop bookbag",
-    "Price": 37.99,
-    "description": "Business Travel Anti Theft Slim Durable Laptops Backpack with USB Charging Port,Water Resistant College Computer Bag for Women & Men Fits 15.6 Inch Laptop and Notebook - Grey"
-  },
-
- 
-
+[
   {
-    "Image" :"images/kleenex.png",
-    "Name": "Kleenex",
-    "Price": 4.39,
-    "description": "Kleenex Trusted Care Everyday Facial Tissues, Flat Box, 160 Count (Pack of 2)"
-  },
-  
- 
-  {
-    "Image" :"images/tylenol.png",
-    "Name": "Tylenol",
-    "Price": 7.49,
-    "description": "Tylenol Extra Strength caplets with 500mg of acetaminophen reduce fever and provide temporary relief of minor aches and pains. From the #1 doctor-recommended brand of pain reliever, each caplet contains 500 mg of acetaminophen for effective, extra strength pain relief."
-  },
-
-
-  {
-    "Image" :"images/notebook.png",
-    "Name": "Five Star Notebook",
-    "Price": 3.39,
-    "description": "Five Star 1 Subject 100pg College Ruled Spiral Notebook (Colors May Vary)"
-  },
-
- 
-  {
-    "Image" :"images/pens.png",
-    "Name": "Paper Mate pens",
-    "Price": 15.99,
-    "description": "Paper Mate InkJoy Gel Pens, Medium Point, Assorted Colors, Set of 14"
+    "image": "images/macbook.png",
+    "name": "MacBook Air 13”",
+    "price": 1099,
+    "description": " With 18 hours of battery life,  you can take the superportable MacBook Air anywhere and blaze through whatever you/'re into.",
+    "button": "Add to cart"
   },
 
   {
-    "Image" :"images/desk.png",
-    "Name": "Standing Desk",
-    "Price": 84.99,
-    "description": "FEZIBO Electric Standing Desk, 48 x 24 Inches Height Adjustable Stand up Desk, Sit Stand Home Office Desk, Computer Desk, Rustic Brown"
+    "image": "images/bookbag.png",
+    "name": "Standard laptop bookbag",
+    "price": 37.99,
+    "description": "Business Travel Anti Theft Slim Durable Laptops Backpack with USB Charging Port,Water Resistant.Fits 15.6 Inch Laptop and Notebook.",
+    "button": "Add to cart"
   },
 
   {
-    "Image" :"images/therapy.png",
-    "Name": "The Cognitive Behavioral Therapy Workbook",
-    "Price": 22.49,
-    "description": "Evidence-Based CBT Skills to Help You Manage Stress, Anxiety, Depression, and More"
+    "image": "images/kleenex.png",
+    "name": "Kleenex",
+    "price": 4.39,
+    "description": "Kleenex Trusted Care Everyday Facial Tissues. Learning to code can be hard, make your life easier by keeping these kleenex on your bed side, or even in your bag!",
+    "button": "Add to cart"
   },
 
   {
-    "Image" :"images/pencils.png",
-    "Name": "Paper Mate Mechanical Pencils",
-    "Price": 18.86,
-    "description": "Paper Mate Clearpoint Mechanical Pencils 0.7mm, HB #2 Pencil Lead, 2 Pencils, School Supplies, Teacher Supplies, Drawing Pencils, Sketching Pencils, Assorted Barrel Colors, 10 Count"
+    "image": "images/tylenol.png",
+    "name": "Tylenol",
+    "price": 7.49,
+    "description": "Tylenol Extra Strength caplets. As a developer, there will be plenty of days and nights where your head will HURT. Highly reccomended by developers across the globe.",
+    "button": "Add to cart"
   },
 
   {
-    "Image" :"images/glasses.png",
-    "Name": "Blue Light Glasses",
-    "Price": 15.99,
-    "description": "livho 2 Pack Blue Light Blocking Glasses, Computer Reading/Gaming/TV/Phones Glasses for Women Men,Anti Eyestrain & UV Glare (Light Black+Clear)"
+    "image": "images/notebook.png",
+    "name": "Five Star Notebook",
+    "price": 3.39,
+    "description": ". Keep up with meeting notes using a Five Star 1 Subject 100pg Spiral Notebook, also handy for taking notes while learning new programming languages!",
+    "button": "Add to cart"
   },
- 
+
   {
-    "Image" :"images/celcuis.png",
-    "Name": "Celcuis",
-    "Price": 23.74,
-    "description": "CELSIUS Sparkling Raspberry Peach, Functional Essential Energy Drink 12 Fl Oz (Pack of 12)"
+    "image": "images/pens.png",
+    "name": "Paper Mate pens",
+    "price": 15.99,
+    "description": "Paper Mate InkJoy Gel Pens, Medium Point, Assorted Colors, Set of 14.Between conferneces and meetings, always be prepared with writing materials!",
+    "button": "Add to cart"
   },
- 
+
   {
-    "Name": "Dont Make me Think Steve Krug",
-    "Price": "",
-    "description": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd Edition) (Voices That Matter)"
-  }];
+    "image": "images/desk.png",
+    "name": "Standing Desk",
+    "price": 84.99,
+    "description": "FEZIBO Electric Standing Desk, 48 x 24 Inches Height Adjustable Stand up Desk, Sit Stand Home Office Desk, Computer Desk, Rustic Brown.Great for long days ansd nights of coding.",
+    "button": "Add to cart"
+  },
+
+  {
+    "image": "images/therapy.png",
+    "name": "Therapy Workbook",
+    "price": 22.49,
+    "description": "Evidence-Based CBT Skills to Help You Manage Stress, Anxiety, Depression, and More.( Coding is hard, emotions are high. Get the help you need!)",
+    "button": "Add to cart"
+  },
+
+  {
+    "image": "images/pencils.png",
+    "name": "Paper Mate Mechanical Pencils",
+    "price": 18.86,
+    "description": "Paper Mate Clearpoint Mechanical pencils. Between conferneces and meetings, always be prepared with writing materials!",
+    "button": "Add to cart"
+  },
+
+  {
+    "image": "images/glasses.png",
+    "name": "Blue Light Glasses",
+    "price": 15.99,
+    "description": "livho 2 Pack Blue Light Blocking Glasses.Great for protecting your eyes while constantly looking at computer screens.",
+    "button": "Add to cart"
+  },
+
+  {
+    "image": "images/celcuis.png",
+    "name": "Celcuis",
+    "price": 23.74,
+    "description": "CELSIUS Essential Energy Drink. There are days me and my counterparts are constently tired. We have long days and nights, and sometimes even the best developers require a bit of a BOOST",
+    "button": "Add to cart"
+  },
+
+  {
+    "image": "images/dontmakemethink.png",
+    "name": "Dont Make me Think Steve Krug",
+    "price": "15.85",
+    "description": " Dont make me think describes the key points, examples and insights which are important to know about website usability. ",
+    "button": "Add to cart"
+  }
+]

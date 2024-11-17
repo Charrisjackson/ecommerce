@@ -1,34 +1,33 @@
-html {
-  width: 90%;
-  height: 90%;
+* {
+  cursor: pointer;
 }
 
 body {
-  background-color: #fffdd0;
-  width: 90%;
-  height: 90%;
-}
-.headerpic {
-  width: 100vw;
-}
-img {
-  height: 500px;
+  background-color: #176269;
+  color: #fffdd0;
   width: 100%;
-  object-fit: cover;
-  position: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 200px;
+  font-size: 20px;
 }
+
 .logo {
-  height: 80px;
-  width: 80px;
+  color: #fffdd0;
   position: absolute;
   left: 0;
 }
 nav {
-  background-color: #3c1361;
+  background-color: #111111;
   top: 0;
   display: flex;
   margin-top: 0;
+  z-index: 200;
   width: 100vw;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
   height: 86px;
   justify-content: space-around;
   align-items: center;
@@ -36,11 +35,166 @@ nav {
 
 nav ul {
   list-style-type: none;
+  color: #fffdd0;
 }
 ul {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-.homenav {
+
+main {
+  text-align: center;
+  font-size: small;
+}
+
+/* product page navbar */
+.productNavbar ul {
+  list-style-type: none;
+  color: #fffdd0;
+}
+.productNavbar ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.price {
+  color: #fffdd0;
+}
+/* contact form */
+
+.submit {
+  background-color: #fffdd0;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  background-color: #111111;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
+  height: 86px;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  color: #fffdd0;
+}
+
+/* contact form styling */
+
+form {
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 20px;
+  align-content: center;
+  margin: 0 20px;
+  height: 80vh;
+  width: 60vw;
+  margin-left: 300px;
+  justify-content: center;
+}
+#userMsg {
+  width: 300px;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#submit {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+#submit:hover {
+  background-color: aquamarine;
+}
+
+/* styling actual products page  */
+
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.product {
+  border: 2px black solid;
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  grid-template-columns: (1fr, 1fr, 1fr);
+}
+.productimage {
+  width: 200px;
+  height: 200px;
+}
+
+.productNavbar {
+  background-color: #111111;
+  top: 0;
+  display: flex;
+  margin-top: 0;
+  width: 100vw;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
+  height: 86px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productNavbar .logo {
+  margin-left: 20px;
+}
+
+.productFooter {
+  background-color: #111111;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
+  height: 86px;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  position: relative;
+}
+
+.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  width: 100%;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.product button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }

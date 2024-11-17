@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: antiquewhite;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+ul li a {
+  text-decoration: none;
+  color: #fffdd0;
+}
+button a {
+  text-decoration: none;
+}
+.banner {
+  width: 100vw;
+  height: 100vh;
+  /* adding blur layer over image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(images/hero.jpeg);
+  background-size: cover;
+  background-image: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  justify-content: space-between;
+}
+.logo {
+  width: 120px;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover:after {
+  width: 100%;
+}
+.content {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: 400px;
+}
+.content h1 {
+  font-size: 50px;
+  margin-top: 80px;
+  text-align: center;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button {
+  width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  position: relative;
+}
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+}
+
+footer {
+  width: 85%;
+
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+  color: #fffdd0;
+}
+/* hover underling trasnition effect */
+.footer ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.footer ul li:hover:after {
+  width: 100%;
+}
+
+/* responsiveness */
+@media screen and (mind-width: 767px) {
+  * {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1022px) {
+  body {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 999px) {
+  body {
+    width: 400px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    width: 500px;
+    height: 550px;
+  }
+}
