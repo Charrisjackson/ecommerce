@@ -48,7 +48,7 @@ a {
   display: flex;
   align-items: center;
   position: sticky;
-  justify-content: space-between;
+  justify-content: flex-end;
   /* border: 5px solid pink; */
 }
 .logo {
@@ -215,4 +215,67 @@ footer ul li {
 }
 .formbold-btn:hover {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+/* Responsiveness */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 20px 0;
+  }
+  .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+  .content h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
 }

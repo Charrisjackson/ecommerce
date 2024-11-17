@@ -1,6 +1,4 @@
 * {
-  cursor: pointer;
-  overflow: scroll;
   padding: 0;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
@@ -9,12 +7,9 @@
 body {
   background-size: cover;
   background-image: center;
-  /* background-image: url(images/productbackground.jpg); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(images/hero.jpeg); */
   background-color: black;
-
   width: 100vw;
+  cursor: pointer;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -56,30 +51,19 @@ h1 {
 }
 .logo {
   color: #fffdd0;
-  position: absolute;
+  position: relative;
   left: 0;
-}
-
-.navbar {
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  justify-content: space-between;
-}
-.logo {
   width: 120px;
 }
-.navbar ul li {
+
+.productNavbar ul li {
   list-style-type: none;
   display: inline-block;
   margin: 0 20px;
   text-transform: uppercase;
   position: relative;
 }
-.navbar ul li::after {
+.productNavbar ul li::after {
   content: "";
   height: 3px;
   width: 0;
@@ -89,7 +73,7 @@ h1 {
   bottom: -10px;
   transition: 0.5s;
 }
-.navbar ul li:hover:after {
+.productNavbar ul li:hover:after {
   width: 100%;
 }
 
@@ -114,7 +98,6 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 .product {
-  /* border: 2px rgb(124, 121, 121) solid; */
   font-family: "Courier New", Courier, monospace;
   display: grid;
   grid-template-columns: (1fr, 1fr, 1fr);
@@ -129,7 +112,7 @@ main {
   top: 0;
   display: flex;
   margin-top: 0;
-  width: 100vw;
+  width: 96vw;
   flex-wrap: nowrap;
   flex: 1 0 67%;
   height: 86px;
@@ -171,6 +154,7 @@ main {
 
 .product button {
   border: 1px solid #009688;
+  border-radius: 5px;
   outline: 0;
   padding: 12px;
   color: white;
@@ -213,7 +197,7 @@ footer ul li {
   text-decoration: none;
 }
 /* hover underling trasnition effect */
-.footer ul li::after {
+.productFooter ul li::after {
   content: "";
   height: 3px;
   width: 0;
@@ -223,6 +207,47 @@ footer ul li {
   bottom: -10px;
   transition: 0.5s;
 }
-.footer ul li:hover:after {
+.producFooter ul li:hover:after {
   width: 100%;
+}
+/* responsiveness */
+@media only screen and (min-width: 370px) and (max-width: 699px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 75%;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  nav a {
+    margin: 0.5rem;
+    text-decoration: none;
+  }
+
+  footer a {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .banner {
+    width: auto;
+  }
+  .navbar {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    padding-top: 0;
+  }
+  .content {
+    width: 100vw;
+    height: 100vh;
+  }
 }
