@@ -1,3 +1,5 @@
+/* imporrting google fonts "inter" , and placing it in the body so that each elemnt inherits that same font-family styling*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -47,6 +49,7 @@ a {
   background-color: black;
   display: flex;
   align-items: center;
+  /* sticky navbar because page isnt saturated with content, and doesnt require los of scrolling so  there was no need to worry about it breaking the flow of the page. also made it more responsive*/
   position: sticky;
   justify-content: flex-end;
   /* border: 5px solid pink; */
@@ -71,6 +74,8 @@ nav ul {
   display: flex;
   justify-content: flex-end;
 }
+/* The ::after pseudo-element inserts some content after the content of the specified element. */
+/* used pseudo elements for cool css transitions in the navbar and footer. this block of code displays a blue underline affect when one of the links are being clicked/ hovered on. */
 .navbar ul li::after {
   content: "";
   height: 3px;
@@ -169,6 +174,7 @@ footer ul li {
   margin-left: 120px;
   margin-top: 0;
 }
+/* targets placeholder on forms, making it a transparent grey like color */
 .form-input::placeholder {
   color: #536387;
 }
@@ -217,48 +223,4 @@ footer ul li {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 /* Responsiveness */
-
-@media screen and (min-width: 767px) {
-  .banner .content {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1022px) {
-  .banner .content {
-    width: 60%;
-  }
-  .numberButtons {
-    padding: 2rem;
-  }
-  .numberButtons button {
-    margin: 0.5rem;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 999px) {
-  .banner .content {
-    width: 400px;
-    height: 600px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .banner .content {
-    width: 500px;
-    height: 600px;
-  }
-
-  .inputbox {
-    width: 450px;
-    height: 150;
-  }
-}
-@media screen and (min-width: 200px) and (max-width: 550px) {
-  .banner .content {
-    width: 300px;
-    height: 550px;
-  }
-
-  .inputbox {
-    width: 250px;
-    height: 100px;
-  }
-}
+/*  majority of the width/heights of these selctors were percentages, making it more responsive than if i had used pixels. media queries not needed, and the ones instered made the webpage look funny */

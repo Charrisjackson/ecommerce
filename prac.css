@@ -151,7 +151,8 @@ footer ul li {
 
 /* responsiveness */
 @media only screen and (min-width: 370px) and (max-width: 750px) {
-  .nav-links a {
+  .navbar a {
+    position: absolute;
     margin: 0.5rem;
     text-decoration: none;
   }
@@ -159,7 +160,6 @@ footer ul li {
   .footer-links a {
     margin: 0.5rem;
     text-decoration: none;
-    color: white;
   }
   .content {
     max-width: 80%;
@@ -179,23 +179,211 @@ footer ul li {
     height: 20px;
   }
 }
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
+/* @media only screen and (min-width: 700px) and (max-width: 1000px) {
   .content {
     font-size: 13px;
-    width: 50vw;
-    height: 50vh;
+    width: 40%;
+    height: 40%;
+    text-align: center;
   }
   .banner {
-    display: grid;
     width: 100vw;
+    height: 100vh;
+  }
+  .navbar a {
+    position: absolute;
+    margin: 0.5rem;
+    text-decoration: none;
   }
 }
 @media only screen and (max-width: 960px) {
   .navbar {
     position: relative;
-    top: 40rem;
+  }
+  .banner {
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media only screen and (max-width: 750px) {
-}
+  .banner {
+    width: 100vw;
+    height: 100vh;
+  }
+} */
 /* add brrak point for 500 max width */
+/* Base styles for larger screens */
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(images/hero.jpeg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+h1 {
+  font-size: 30px;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  justify-content: space-between;
+}
+.logo {
+  width: 120px;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: ;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover:after {
+  width: 100%;
+}
+.content {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: 400px;
+}
+.content h1 {
+  font-size: 50px;
+  margin-top: 80px;
+  text-align: center;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button {
+  width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid;
+  background: transparent;
+  position: relative;
+}
+span {
+  background: ;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+} /* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+  .logo {
+    width: 100px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  .content {
+    width: 70%;
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+  .content h1 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  .content p {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  button {
+    width: 150px;
+    padding: 12px 0;
+  }
+} /* Media query for mobile devices */
+@media (max-width: 480px) {
+  .banner {
+    height: 100vh;
+  }
+  .content {
+    width: 90%;
+    margin-left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  .content h1 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  .content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .navbar {
+    width: 100%;
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul li {
+    margin: 5px 0;
+  }
+  button {
+    width: 120px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    max-width: 100%;
+  }
+}
